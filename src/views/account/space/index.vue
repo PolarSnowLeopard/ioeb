@@ -71,24 +71,24 @@ data.push({
   norm: [0, 2],
   number: '2342'
 })
-data.push({
-  name: '无人机目标识别微服务',
-  netWork: 'bridge',
-  port: '0.0.0.0:8000/TCP → 0.0.0.0:80001',
-  volume: '/var/opt/gitlab/mnt/user  →  /appdata/aml/data',
-  status: 1,
-  norm: [1, 2],
-  number: '2342'
-})
-data.push({
-  name: '无人机远程控制微服务',
-  netWork: 'bridge',
-  port: '0.0.0.0:8000/TCP → 0.0.0.0:80001',
-  volume: '/var/opt/gitlab/mnt/user  →  /appdata/aml/data',
-  status: 1,
-  norm: [0, 1, 3],
-  number: '2342'
-})
+// data.push({
+//   name: '无人机目标识别微服务',
+//   netWork: 'bridge',
+//   port: '0.0.0.0:8000/TCP → 0.0.0.0:80001',
+//   volume: '/var/opt/gitlab/mnt/user  →  /appdata/aml/data',
+//   status: 1,
+//   norm: [1, 2],
+//   number: '2342'
+// })
+// data.push({
+//   name: '无人机远程控制微服务',
+//   netWork: 'bridge',
+//   port: '0.0.0.0:8000/TCP → 0.0.0.0:80001',
+//   volume: '/var/opt/gitlab/mnt/user  →  /appdata/aml/data',
+//   status: 1,
+//   norm: [0, 1, 3],
+//   number: '2342'
+// })
 if (sessionStorage.getItem('upload_exception_service')) {
   data.push({
     name: '异常识别微服务',

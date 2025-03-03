@@ -23,7 +23,7 @@ const searchUserScale = [
 const searchData = [
   {
     index: 1,
-    keyword: '无人机状态采集微服务',
+    keyword: '异常识别微服务',
     count: Math.floor(Math.random() * 1000),
     range: Math.floor(Math.random() * 100),
     status: Math.floor((Math.random() * 10) % 2)
@@ -37,39 +37,39 @@ const searchData = [
   },
   {
     index: 3,
-    keyword: '无人机视频采集微服务',
+    keyword: '风险评估报告生成微服务',
     count: Math.floor(Math.random() * 1000),
     range: Math.floor(Math.random() * 100),
     status: Math.floor((Math.random() * 10) % 2)
   },
   {
     index: 4,
-    keyword: '无人机视频通信微服务',
+    keyword: '风险评估微服务',
     count: Math.floor(Math.random() * 1000),
     range: Math.floor(Math.random() * 100),
     status: Math.floor((Math.random() * 10) % 2)
   },
   {
     index: 5,
-    keyword: '无人机视频分析微服务',
-    count: Math.floor(Math.random() * 1000),
-    range: Math.floor(Math.random() * 100),
-    status: Math.floor((Math.random() * 10) % 2)
-  },
-  {
-    index: 6,
-    keyword: '双向通信微服务',
-    count: Math.floor(Math.random() * 1000),
-    range: Math.floor(Math.random() * 100),
-    status: Math.floor((Math.random() * 10) % 2)
-  },
-  {
-    index: 7,
-    keyword: '服务间数据传递服务',
+    keyword: '安全性指纹评测微服务',
     count: Math.floor(Math.random() * 1000),
     range: Math.floor(Math.random() * 100),
     status: Math.floor((Math.random() * 10) % 2)
   }
+  // {
+  //   index: 6,
+  //   keyword: '双向通信微服务',
+  //   count: Math.floor(Math.random() * 1000),
+  //   range: Math.floor(Math.random() * 100),
+  //   status: Math.floor((Math.random() * 10) % 2)
+  // },
+  // {
+  //   index: 7,
+  //   keyword: '服务间数据传递服务',
+  //   count: Math.floor(Math.random() * 1000),
+  //   range: Math.floor(Math.random() * 100),
+  //   status: Math.floor((Math.random() * 10) % 2)
+  // }
 ]
 
 const serviceRank = [
@@ -125,19 +125,19 @@ const metaAppRank = [
     total: 15
   },
   {
-    name: '低空经济/无人机虚拟仿真教学元应用',
+    name: '跨境贸易/风险评估报告生成元应用',
     total: 14
   },
   {
-    name: '低空经济/无人机远程救援实训元应用',
+    name: '跨境贸易/模型评测-安全性指纹元应用',
     total: 12
   }
 ]
 
 const sourceData = [
-  { item: '无人机技术服务', count: 32.2 },
+  { item: '异常识别技术服务', count: 32.2 },
   { item: '反洗钱技术服务', count: 21 },
-  { item: '智慧教育', count: 17 },
+  { item: '报告生成', count: 17 },
   { item: '人工智能', count: 13 }
 ]
 

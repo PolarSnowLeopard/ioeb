@@ -30,13 +30,13 @@ export const asyncRouterMap = [
             name: 'vertical-user-aml',
             component: () => import('@/views/vertical/user/aml'),
             meta: { title: '跨境支付AI监测', keepAlive: true, permission: ['admin', 'publisher'] }
-          },
-          {
-            path: '/vertical-user/aircraft',
-            name: 'vertical-user-aircraft',
-            meta: { title: '低空飞行AI监控', keepAlive: true, permission: ['admin', 'publisher'] },
-            component: () => import('@/views/vertical/user/aircraft')
           }
+          // {
+          //   path: '/vertical-user/aircraft',
+          //   name: 'vertical-user-aircraft',
+          //   meta: { title: '低空飞行AI监控', keepAlive: true, permission: ['admin', 'publisher'] },
+          //   component: () => import('@/views/vertical/user/aircraft')
+          // }
         ]
       },
       // 垂域原子微服务发布
@@ -52,13 +52,13 @@ export const asyncRouterMap = [
             name: 'vertical-ms-aml',
             component: () => import('@/views/vertical/ms/aml'),
             meta: { title: '跨境支付AI监测服务发布', keepAlive: true, permission: ['admin', 'publisher'] }
-          },
-          {
-            path: '/vertical-ms/aircraft',
-            name: 'vertical-ms-aircraft',
-            meta: { title: '低空飞行AI监控服务发布', keepAlive: true, permission: ['admin', 'publisher'] },
-            component: () => import('@/views/vertical/ms/aircraft')
           }
+          // {
+          //   path: '/vertical-ms/aircraft',
+          //   name: 'vertical-ms-aircraft',
+          //   meta: { title: '低空飞行AI监控服务发布', keepAlive: true, permission: ['admin', 'publisher'] },
+          //   component: () => import('@/views/vertical/ms/aircraft')
+          // }
         ]
       },
       // 垂域元应用仿真构建
@@ -74,13 +74,13 @@ export const asyncRouterMap = [
             name: 'vertical-meta-app-aml',
             component: () => import('@/views/schedule/AmlSchedule'),
             meta: { title: '跨境元应用智能体构建', keepAlive: true, permission: ['admin', 'publisher', 'user'] }
-          },
-          {
-            path: '/vertical-atom-app/aircraft',
-            name: 'vertical-atom-app-aircraft',
-            component: () => import('@/views/schedule/AirCraftSchedule'),
-            meta: { title: '低空元应用智能体构建', keepAlive: true, permission: ['admin', 'publisher', 'user'] }
           }
+          // {
+          //   path: '/vertical-atom-app/aircraft',
+          //   name: 'vertical-atom-app-aircraft',
+          //   component: () => import('@/views/schedule/AirCraftSchedule'),
+          //   meta: { title: '低空元应用智能体构建', keepAlive: true, permission: ['admin', 'publisher', 'user'] }
+          // }
         ]
       },
       // 技术评测与业务验证
@@ -110,27 +110,27 @@ export const asyncRouterMap = [
                 component: () => import('@/views/evaluation/aml/emulation')
               }
             ]
-          },
-          {
-            path: '/evaluation/aircraft',
-            name: 'evaluation-aircraft',
-            meta: { title: '低空飞行AI服务及应用', keepAlive: true, permission: ['admin', 'publisher'] },
-            component: RouteView,
-            children: [
-              {
-                path: '/evaluation/aircraft/technology',
-                name: 'evaluation-aircraft-technology',
-                component: () => import('@/views/evaluation/aircraft/technology'),
-                meta: { title: '原子微服务技术评测', keepAlive: true, permission: ['admin', 'publisher'] }
-              },
-              {
-                path: '/evaluation/aircraft//emulation',
-                name: 'atom-app-evaluation-aircraft',
-                meta: { title: '元应用业务数据验证', keepAlive: true, permission: ['admin', 'publisher'] },
-                component: () => import('@/views/evaluation/aircraft/emulation')
-              }
-            ]
           }
+          // {
+          //   path: '/evaluation/aircraft',
+          //   name: 'evaluation-aircraft',
+          //   meta: { title: '低空飞行AI服务及应用', keepAlive: true, permission: ['admin', 'publisher'] },
+          //   component: RouteView,
+          //   children: [
+          //     {
+          //       path: '/evaluation/aircraft/technology',
+          //       name: 'evaluation-aircraft-technology',
+          //       component: () => import('@/views/evaluation/aircraft/technology'),
+          //       meta: { title: '原子微服务技术评测', keepAlive: true, permission: ['admin', 'publisher'] }
+          //     },
+          //     {
+          //       path: '/evaluation/aircraft//emulation',
+          //       name: 'atom-app-evaluation-aircraft',
+          //       meta: { title: '元应用业务数据验证', keepAlive: true, permission: ['admin', 'publisher'] },
+          //       component: () => import('@/views/evaluation/aircraft/emulation')
+          //     }
+          //   ]
+          // }
         ]
       },
       // 服务及应用运维管理
@@ -160,27 +160,27 @@ export const asyncRouterMap = [
                 component: () => import('@/views/operation/aml/container-manage')
               }
             ]
-          },
-          {
-            path: '/operation/aircraft',
-            name: 'operation-aircraft',
-            meta: { title: '低空飞行AI服务及应用', keepAlive: true, permission: ['admin', 'publisher'] },
-            component: RouteView,
-            children: [
-              {
-                path: '/operation/aircraft/container-status',
-                name: 'operation-aircraft-container-status',
-                component: () => import('@/views/operation/aircraft/container-status'),
-                meta: { title: '微服务容器化状态', keepAlive: true, permission: ['admin', 'publisher'] }
-              },
-              {
-                path: '/operation/aircraft/container-manage',
-                name: 'operation-aircraft-container-manage',
-                meta: { title: '微服务容器化管理', keepAlive: true, permission: ['admin', 'publisher'] },
-                component: () => import('@/views/operation/aircraft/container-manage')
-              }
-            ]
           }
+          // {
+          //   path: '/operation/aircraft',
+          //   name: 'operation-aircraft',
+          //   meta: { title: '低空飞行AI服务及应用', keepAlive: true, permission: ['admin', 'publisher'] },
+          //   component: RouteView,
+          //   children: [
+          //     {
+          //       path: '/operation/aircraft/container-status',
+          //       name: 'operation-aircraft-container-status',
+          //       component: () => import('@/views/operation/aircraft/container-status'),
+          //       meta: { title: '微服务容器化状态', keepAlive: true, permission: ['admin', 'publisher'] }
+          //     },
+          //     {
+          //       path: '/operation/aircraft/container-manage',
+          //       name: 'operation-aircraft-container-manage',
+          //       meta: { title: '微服务容器化管理', keepAlive: true, permission: ['admin', 'publisher'] },
+          //       component: () => import('@/views/operation/aircraft/container-manage')
+          //     }
+          //   ]
+          // }
         ]
       },
       // 技术资源服务发布

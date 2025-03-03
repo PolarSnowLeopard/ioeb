@@ -4,7 +4,7 @@
       <a-col :span="8">
         <a-card title="设备端微服务" :bordered="true">
           <p style="font-size: 15px;font-weight: bolder">设备状态</p>
-          <a-button type="primary" block @click="()=>(modalVisible1=true)">无人机状态采集微服务</a-button>
+          <a-button type="primary" block @click="()=>(modalVisible1=true)">异常识别微服务</a-button>
           <a-modal
             title="无人机飞行信息"
             :visible="modalVisible1"
@@ -85,7 +85,7 @@
           </a-modal>
           <a-divider/>
           <p style="font-size: 15px;font-weight: bolder">现场视频</p>
-          <a-button type="primary" block @click="modalVisible3=true">无人机视频采集微服务</a-button>
+          <a-button type="primary" block @click="modalVisible3=true">风险评估报告生成微服务</a-button>
           <br/><br/>
           <a-modal
             title="视频采集"
@@ -100,7 +100,7 @@
             <a-button type="primary" @click="$alert('Disconnect Success')">断开直播源</a-button>
           </a-modal>
           <a-button type="primary" block @click="modalVisible4=true">
-            无人机视频通信微服务
+            风险评估微服务
           </a-button>
           <br/><br/>
           <a-modal
@@ -125,7 +125,7 @@
             <a-button type="primary"></a-button>
           </a-modal>
           <a-button type="primary" block>
-            无人机视频分析微服务
+            安全性指纹评测微服务
           </a-button>
         </a-card>
       </a-col>

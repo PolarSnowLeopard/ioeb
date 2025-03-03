@@ -707,7 +707,7 @@ const airCraftServices = [
     number: '2342'
   },
   {
-    name: '无人机视频分析微服务',
+    name: '安全性指纹评测微服务',
     attribute: 2,
     type: 0,
     domain: 0,
