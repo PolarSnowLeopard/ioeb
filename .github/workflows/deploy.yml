@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - zfy
+      - ums 
 
 jobs:
   build-and-deploy:
