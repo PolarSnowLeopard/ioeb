@@ -3,12 +3,7 @@ name: Deploy to Server
 on:
   push:
     branches:
-<<<<<<< HEAD:.github/workflows/deploy.yml
-      - zfy
-      - ums 
-=======
       - master
->>>>>>> zfy:.github/workflows/master.yml
 
 jobs:
   build-and-deploy:
